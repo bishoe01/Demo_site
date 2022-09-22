@@ -1,0 +1,44 @@
+$mainColor: #5A8DFF;
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// navbar 
+.navbar{
+  color: $mainColor;
+  background-color: white;
+  display: flex;
+  height: 80px;
+  width: 90%;
+  margin: auto;
+
+  .navbar__logo{
+    padding: 15px;
+    object-fit: cover;
+    background-color: transparent;
+  }
+  .navbar__items{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    line-height: 80px;
+    .navbar__item{
+      list-style: none;
+      padding: 0 20px;
+      margin:  0 5px;
+      color: $mainColor;
+      cursor: pointer;
+      
+      transition: all 0.3s ease-in-out;
+      &:link{
+        text-decoration: none;
+      }
+      &:hover{
+        color: black;
+      }
+    }
+  }
+
+}
+
