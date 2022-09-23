@@ -2,10 +2,15 @@ $mainColor: #5A8DFF;
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Noto';
 }
-
+@font-face {
+  font-family: 'Noto';
+  src: url('./fonts/OpenSans/OpenSans-Regular.ttf');
+}
 // navbar 
 .navbar{
+  position: relative;
   color: $mainColor;
   background-color: white;
   display: flex;
@@ -25,17 +30,16 @@ $mainColor: #5A8DFF;
     line-height: 80px;
     .navbar__item{
       list-style: none;
-      padding: 0 20px;
-      margin:  0 5px;
+      margin:  0 30px;
       color: $mainColor;
       cursor: pointer;
       
-      transition: all 0.3s ease-in-out;
+      transition: all 0.1s ease-in-out;
       &:link{
         text-decoration: none;
       }
       &:hover{
-        color: black;
+        
       }
     }
   }
