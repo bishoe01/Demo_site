@@ -4,7 +4,6 @@ import "../App.scss";
 function Header(props) {
     const navigate = useNavigate();
     const [clickItem, setClickItem] = useState("home");
-    
     return (
         <section className='navbar'>
             <img className='navbar__logo' src="https://drx-media.s3.ap-northeast-2.amazonaws.com/image/icon/icon-no-padding.png" alt="logoImg" />
@@ -32,6 +31,7 @@ function Header(props) {
                 }}
                 >SCHEDULE</Link>
             </div>
+
         </section>
     );
 }

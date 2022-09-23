@@ -6,7 +6,12 @@ $mainColor: #5A8DFF;
 }
 @font-face {
   font-family: 'Noto';
-  src: url('./fonts/OpenSans/OpenSans-Regular.ttf');
+  src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+@font-face {
+  font-family: "league";
+  src: url('./fonts/League_Gothic/static/LeagueGothic/LeagueGothic-Regular.ttf');
+  font-weight: 500;
 }
 // navbar 
 .navbar{
@@ -15,12 +20,11 @@ $mainColor: #5A8DFF;
   background-color: white;
   display: flex;
   height: 80px;
-  width: 90%;
+  width: 95%;
   margin: auto;
 
   .navbar__logo{
-    padding: 15px;
-    object-fit: cover;
+    padding: 17px;
     background-color: transparent;
   }
   .navbar__items{
