@@ -75,3 +75,39 @@ $senaryColor: #FFA55A;
     bottom:20px
   }
 }
+// category
+
+.category{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .h1{
+    font-family: "Noto";
+    font-size: 24px;
+  }
+  .category__check{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    padding: 0px 20px;
+    align-items: center;
+  .check__title{
+    padding:  20px 40px;
+    background-color: gray;
+    
+  }    
+    .check__list{
+    padding-left: 50px;
+    }
+
+    .list__radio{
+      .radio{
+        padding: 0 20px;
+      }
+    }
+  }
+  
+}
