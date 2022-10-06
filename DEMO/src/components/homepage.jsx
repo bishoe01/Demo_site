@@ -16,16 +16,13 @@ function Homepage(props) {
     };
     return (
         <div className='home__banner'>
-            <button onClick={toggleFreeze}>{buttonText}</button>
-
-            <TypeIt
-                options={{ loop: false }}
+            <TypeIt className="title"
+                options={{ loop: true }}
                 getAfterInit={(instance) => {
-                    setInstance(instance);
+                    instance.type("WE ARE DRX").pause(1000).delete(10).pause(500).type("CHAMPIONS").pause(1000);
                     return instance;
                 }}
             >
-                WE ARE DRX
             </TypeIt>
         </div>
 
